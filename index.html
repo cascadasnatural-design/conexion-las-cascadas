@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conexión Las Cascadas - Energía Positiva</title>
-    <!-- IMPORTAMOS LAS FUENTES DE GOOGLE FONTS (PERMANENT MARKER Y RUBIK) -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- IMPORTAMOS LAS FUENTES DE GOOGLE FONTS (INCLUYENDO ROCK SALT PARA LA FIRMA URBANA) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
     
     <style>
         :root {
@@ -17,10 +17,9 @@
             --texto-oscuro: #2b2b2b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-       body {
-            /* ESTE ES EL NUEVO DEGRADADO DE VERDE BOSQUE A AZUL LAGO */
+        body {
+            /* DEGRADADO DE VERDE BOSQUE A AZUL LAGO */
             background: linear-gradient(135deg, #1e4620 0%, #153540 100%);
-            /* ASEGURA QUE EL DEGRADADO CUBRA TODA LA PANTALLA EN CUALQUIER CELULAR */
             background-attachment: fixed; 
             font-family: "Rubik", -apple-system, sans-serif;
             color: var(--texto-oscuro);
@@ -97,7 +96,20 @@
         }
         .card p { font-size: 0.9rem; line-height: 1.5; color: #444; }
         
-        footer { margin-top: 25px; font-size: 0.8rem; color: #999; }
+        footer { 
+            margin-top: 25px; 
+            font-size: 0.8rem; 
+            color: #888; 
+        }
+        /* ESTILO PARA LA FIRMA ESTILO TAG URBANO */
+        .artistas-firma {
+            font-family: "Rock Salt", cursive;
+            font-size: 0.85rem;
+            color: var(--azul-lago);
+            margin-top: 12px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -136,7 +148,8 @@
         </div>
 
         <footer>
-            Hecho a mano con ♥ en el sur de Chile.
+            Música con el ♥ en el sur de Chile.
+            <div class="artistas-firma">Jemc ft Rstyle</div>
         </footer>
     </div>
 
