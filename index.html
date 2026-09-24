@@ -17,10 +17,12 @@
             --texto-oscuro: #2b2b2b;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            /* APLICAMOS LA FUENTE MODERNA AL CUERPO */
+       body {
+            /* ESTE ES EL NUEVO DEGRADADO DE VERDE BOSQUE A AZUL LAGO */
+            background: linear-gradient(135deg, #1e4620 0%, #153540 100%);
+            /* ASEGURA QUE EL DEGRADADO CUBRA TODA LA PANTALLA EN CUALQUIER CELULAR */
+            background-attachment: fixed; 
             font-family: "Rubik", -apple-system, sans-serif;
-            background-color: var(--crema-suave);
             color: var(--texto-oscuro);
             display: flex;
             justify-content: center;
@@ -29,14 +31,15 @@
             padding: 20px;
         }
         .container {
-            background: #ffffff;
+            /* DEGRADADO SUTIL ESTILO MADERA CLARA */
+            background: linear-gradient(180deg, #f1eae0 0%, #e3d7c5 100%);
             max-width: 450px;
             width: 100%;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
             padding: 30px 25px;
             text-align: center;
-            border: 1px solid rgba(0,0,0,0.03);
+            border: 1px solid rgba(255,255,255,0.2);
         }
         .header h1 {
             /* TITULO PRINCIPAL ESTILO GRAFFITI MARCADOR */
